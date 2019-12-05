@@ -8,4 +8,8 @@ desc 'outputs hola to the terminal'
 task :hola do
   puts "hola from Rake!"
 end
+
+task :environment do
+  require_relative './config/environment'
+end
 end
